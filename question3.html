@@ -1,0 +1,40 @@
+<html>
+	<body>
+		<div id=titlebar>
+			Final Question
+		</div>
+		<div id=startbutton>
+			<form>
+				<button class="button1" type="button" id="start">Question </button>
+			</form>
+		</div>
+		<div id=info>
+		</div>                               
+		<script>
+		window.onload = main;
+		function main() {
+				var btn = document.getElementById("start");
+				btn.addEventListener("click", game);
+			}
+
+			function game() {
+				alert("This is the final question this will be a hard one");
+				var name = prompt("What is your name");
+				alert("Hello "+name+", Last time i ask this question i promise");
+				var ansone = prompt("What is 8 * 8 + 4 + 1 * 920 + 6");
+				if (ansone === "994"){
+					alert("Arent you a smart fellow");
+					
+				}
+				else{
+					alert("Did you not use a calculator?");
+				}
+				alert("I don't like keeping score so everyone is a winner and also i have no idea how to.");
+				}
+			
+			
+			 
+
+		</script>
+	</body>
+</html>

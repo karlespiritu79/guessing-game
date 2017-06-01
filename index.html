@@ -1,0 +1,39 @@
+<html>
+	<body>
+		<div id=titlebar>
+			Hey are you prepared to get gotted.
+		</div>
+		<div id=startbutton>
+			<form>
+				<button class="button1" type="button" id="start">Question </button>
+			</form>
+		</div>
+		<div id=info>
+		</div>                               
+		<script>
+		window.onload = main;
+		function main() {
+				var btn = document.getElementById("start");
+				btn.addEventListener("click", game);
+			}
+
+			function game() {
+				alert("Hello and Welcome to the game!!");
+				var name = prompt("What is your name");
+				alert("Hello "+name+", This game will probably suckk");
+				var ansone = prompt("First question, what is the square root of 9");
+				if (ansone === "3"){
+					alert("Good job i didn't even know that one");
+				window.open("question2.html")}
+				else{
+					alert("You'll get it next time");
+				}
+				
+				}
+			
+			
+			 
+
+		</script>
+	</body>
+</html>
